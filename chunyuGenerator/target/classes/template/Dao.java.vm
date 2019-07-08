@@ -1,0 +1,23 @@
+package ${package}.${moduleName}.dao;
+
+import ${package}.${moduleName}.entity.${className}Entity;
+import org.apache.ibatis.annotations.Mapper;
+import com.baomidou.mybatisplus.plugins.Page;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+/**
+ * ${comments}
+ *
+ * @author ${author}
+ * @email ${email}
+ * @date ${datetime}
+ */
+@Mapper
+public interface ${className}Dao extends BaseMapper<${className}Entity> {
+    /**
+    *  根据条件查询列表数据
+    * @param plusPage
+    * @param params
+    * @return
+    */
+    List<${className}Entity> queryPage(Page<${className}Entity> plusPage, Map<String, Object> params);
+}
